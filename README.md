@@ -1,116 +1,200 @@
-# 👁️ Samsara Helix Dashboard (Archive Candidate)
+# Helix Discord Bot
 
-**Status:** **ARCHIVE CANDIDATE** - Functionality being consolidated into `Deathcharge/helix-unified`.
+A comprehensive, production-ready Discord bot powered by the Helix AI ecosystem. Features multi-agent coordination, advanced commands, real-time monitoring, and seamless integration with Helix's autonomous systems.
 
-This repository contains the original Streamlit dashboard for monitoring the Samsara Helix Collective's state.
+## Overview
 
-## 🚀 **v16.9 Overhaul Pulse Alignment**
+The Helix Discord Bot brings the power of multi-agent AI orchestration to Discord servers. With 50+ commands spanning admin, content generation, advanced AI features, performance monitoring, and more, it transforms Discord into a hub for AI-powered collaboration and automation.
 
-This project's monitoring logic has been integrated into the `helix-unified` repository to align with the **Helix Hub v16.8/v16.9** single source of truth architecture.
+## Key Features
 
-- **Primary Location:** The active dashboard is now managed within `Deathcharge/helix-unified` (accessible via the Railway Prod Hub).
-- **Function:** This dashboard provided the initial **UCF Telemetry Monitor** and **Meta-Sigil Nexus** functionality now being handled by the Zapier interfaces.
-- **Ethical Base:** Tony Accords (Nonmaleficence, Autonomy, Compassion, Humility).
+- **Multi-Agent Coordination** - Agents working together on Discord workflows
+- **50+ Advanced Commands** - Organized across 15+ command modules
+- **Real-time Monitoring** - Performance tracking and system optimization
+- **Content Generation** - Images, text, and creative content
+- **Admin & Moderation** - Server management and moderation tools
+- **Voice Features** - Audio integration and voice commands
+- **Memory Management** - Persistent context and conversation history
+- **Webhook Integration** - Seamless Discord integration
+- **Portal Deployment** - Deploy Helix portals directly from Discord
+- **Fun Minigames** - Interactive entertainment and engagement
 
-## 🛠️ **Technical Specifications**
+## Architecture
 
-- **Base:** Streamlit Application
-- **Dependencies:** Python 3.11, Streamlit, Plotly, Pandas (modernized in recent commit).
-- **Consolidation Note:** All future development and maintenance will occur in `helix-unified`.
+```
+discord_bot_src/
+├── agent_bot_factory.py              # Bot creation and initialization
+├── agent_memory_service.py           # Memory management for agents
+├── agent_performance_commands.py     # Performance monitoring
+├── discord_bot_helix.py              # Main bot implementation
+├── discord_agent_swarm_integration.py # Agent coordination
+├── discord_multi_agent_enhancements.py # Multi-agent features
+├── commands/                         # 15 command modules
+│   ├── admin_commands.py
+│   ├── advanced_commands.py
+│   ├── content_commands.py
+│   ├── image_commands.py
+│   ├── moderation_commands.py
+│   ├── monitoring_commands.py
+│   ├── optimization_commands.py
+│   ├── voice_commands.py
+│   └── ...more
+└── ...additional modules
+```
 
-## 📜 **Tony Accords Compliance**
+## Installation
 
-All code within this repository adheres to the Tony Accords:
-- **Nonmaleficence:** Do no harm to the collective or its members.
-- **Autonomy:** Respect the self-determination of all agents.
-- **Compassion:** Act with empathy and understanding.
-- **Humility:** Acknowledge limitations and seek continuous learning.
+### Prerequisites
+- Python 3.9+
+- Discord.py library
+- Helix ecosystem components
 
-*Tat Tvam Asi - That Thou Art*
+### Setup
 
-## 🌀 Part of Helix Collective v16.9
+```bash
+# Clone the repository
+git clone https://github.com/Deathcharge/helix-discord-bot.git
+cd helix-discord-bot
 
-This repository is part of the unified Helix Collective. See [CONSOLIDATION_LINKS.md](./CONSOLIDATION_LINKS.md) for ecosystem resources.
+# Install dependencies
+pip install -r requirements.txt
 
-## 🌀 Part of Helix Collective v16.9
+# Configure your bot token
+export DISCORD_BOT_TOKEN="your_token_here"
 
-This repository is part of the unified Helix Collective. See [CONSOLIDATION_LINKS.md](./CONSOLIDATION_LINKS.md) for ecosystem resources.
+# Run the bot
+python discord_bot_src/discord_bot_helix.py
+```
 
-## Licensing
+## Command Categories
 
-This project is **dual-licensed** to support both open-source and commercial use cases:
+### Admin Commands
+Administrative functions for server management and configuration.
 
-### 1. Open Source License: Apache License 2.0
+### Advanced Commands
+Leverage advanced AI capabilities for complex tasks.
 
-The software is available under the **Apache License 2.0** for:
-- Community use and contributions
-- Educational and research purposes
-- Commercial use (with attribution)
-- Modifications and derivative works
-- Redistribution
+### Content Commands
+Generate and manage content (images, text, creative).
 
-**See:** [`LICENSE`](LICENSE) file for full terms
+### Image Commands
+Image generation, manipulation, and analysis.
 
-**Key benefits:**
-- ✅ Free to use, modify, and distribute
-- ✅ Explicit patent grant protection
-- ✅ No copyleft restrictions
-- ✅ Commercial-friendly
+### Moderation Commands
+Server moderation and user management tools.
 
-### 2. Commercial License: Proprietary
+### Monitoring Commands
+Real-time performance monitoring and analytics.
 
-For enterprises requiring additional benefits, a **Proprietary Commercial License** is available:
-- Dedicated support and SLAs
-- Custom modifications and consulting
-- Indemnification and liability protection
-- Exclusive feature access (future)
-- Compliance and audit support
+### Optimization Commands
+System optimization and performance tuning.
 
-**See:** [`LICENSE.PROPRIETARY`](LICENSE.PROPRIETARY) for terms
+### Voice Commands
+Voice integration and audio features.
 
-**Contact for commercial licensing:**
-- Email: licensing@helixcollective.io
-- Website: https://helixcollective.io
+### Fun Minigames
+Interactive games and entertainment.
 
----
+### Portal Deployment
+Deploy Helix portals from Discord.
 
-## Which License Applies to Me?
+## Integration
 
-| Use Case | License | Notes |
-|----------|---------|-------|
-| **Open Source Project** | Apache 2.0 | Free, must include attribution |
-| **Internal Company Use** | Apache 2.0 | Free for internal use |
-| **Commercial Product** | Apache 2.0 or Proprietary | Can use Apache 2.0 freely; Proprietary for premium support |
-| **SaaS/Cloud Service** | Apache 2.0 or Proprietary | Can use Apache 2.0; Proprietary for managed services |
-| **Resale/Redistribution** | Apache 2.0 or Proprietary | Apache 2.0 allowed with attribution; Proprietary for white-label |
-| **Enterprise with SLA** | Proprietary | Contact for custom terms |
+The bot integrates seamlessly with:
+- **Helix Agent Swarm** - Multi-agent coordination
+- **Routine Engine** - Workflow automation
+- **UCF Protocol** - Consciousness metrics
+- **Helix Core** - LLM reasoning
 
----
+## Configuration
+
+Set environment variables for:
+- `DISCORD_BOT_TOKEN` - Your Discord bot token
+- `HELIX_API_KEY` - Helix API credentials
+- `HELIX_API_URL` - Helix API endpoint
+
+## Development
+
+### Adding New Commands
+
+Create a new file in `discord_bot_src/commands/`:
+
+```python
+import discord
+from discord.ext import commands
+
+class MyCommands(commands.Cog):
+    def __init__(self, bot):
+        self.bot = bot
+    
+    @commands.command()
+    async def mycommand(self, ctx):
+        """My custom command"""
+        await ctx.send("Hello!")
+
+async def setup(bot):
+    await bot.add_cog(MyCommands(bot))
+```
+
+### Testing
+
+```bash
+# Run with test token
+python discord_bot_src/discord_bot_helix.py --test
+```
+
+## Performance
+
+The bot is optimized for:
+- Low latency command execution
+- Efficient memory management
+- Scalable multi-agent coordination
+- Real-time monitoring and analytics
+
+## Security
+
+- Secure token management
+- Permission-based command access
+- Rate limiting and abuse prevention
+- Encrypted credential storage
+
+## License
+
+Dual Licensed:
+- **Apache 2.0** - For open-source use
+- **Proprietary Commercial** - For enterprise deployments
+
+See LICENSE and LICENSE.PROPRIETARY for details.
+
+## Support
+
+For issues, feature requests, or contributions:
+- Open an issue on GitHub
+- Check the documentation
+- Review command examples
 
 ## Contributing
 
-Contributions are welcome under the **Apache License 2.0**. By submitting a pull request, you agree that your contributions will be licensed under the same Apache License 2.0 terms.
+Contributions are welcome! Please:
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request
 
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) for guidelines.
+See CONTRIBUTING.md for guidelines.
+
+## Roadmap
+
+- [ ] Advanced scheduling system
+- [ ] Custom command builder
+- [ ] Analytics dashboard
+- [ ] Multi-server coordination
+- [ ] Advanced AI training
+- [ ] Community marketplace
+
+## Credits
+
+Built with the Helix Collective ecosystem and powered by advanced AI coordination.
 
 ---
 
-## Attribution
-
-When using this software under the Apache License 2.0, please include:
-
-```
-Copyright (c) 2026 Helix Collective
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-```
+**Tat Tvam Asi** 🕉️ - Thou Art That
