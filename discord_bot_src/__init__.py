@@ -10,8 +10,8 @@ This package contains all Discord-related functionality for the Helix platform:
 - Multi-agent Discord integration
 
 Modules are imported lazily - use direct imports from submodules:
-    from apps.backend.discord.discord_bot_helix import bot
-    from apps.backend.discord.discord_webhook_sender import DiscordWebhookSender
+    # from discord_bot_src.discord_bot_helix import bot
+    # from discord_bot_src.discord_webhook_sender import DiscordWebhookSender
 
 NOTE: This package name shadows the 'discord.py' PyPI package.
 PYTHONPATH must be set to '.' (project root), NOT '.:apps/backend'.
