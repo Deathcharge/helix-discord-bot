@@ -47,7 +47,7 @@ discord_bot_src/
 ### Prerequisites
 - Python 3.9+
 - Discord.py library
-- Samsara Helix ecosystem components
+- Samsara Samsara Helix ecosystem components
 
 ### Setup
 
@@ -193,7 +193,7 @@ See CONTRIBUTING.md for guidelines.
 
 ## Credits
 
-Built with the Samsara Samsara Helix ecosystem and powered by advanced AI coordination.
+Built with the Samsara Samsara Samsara Helix ecosystem and powered by advanced AI coordination.
 
 ---
 
