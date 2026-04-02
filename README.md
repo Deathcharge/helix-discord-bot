@@ -1,4 +1,4 @@
-# Helix Discord Bot
+# Samsara Helix Discord Bot
 
 A comprehensive, production-ready Discord bot powered by the Helix AI ecosystem. Features multi-agent coordination, advanced commands, real-time monitoring, and seamless integration with Helix's autonomous systems.
 
@@ -47,7 +47,7 @@ discord_bot_src/
 ### Prerequisites
 - Python 3.9+
 - Discord.py library
-- Helix ecosystem components
+- Samsara Helix ecosystem components
 
 ### Setup
 
@@ -193,7 +193,7 @@ See CONTRIBUTING.md for guidelines.
 
 ## Credits
 
-Built with the Helix Collective ecosystem and powered by advanced AI coordination.
+Built with the Samsara Samsara Helix ecosystem and powered by advanced AI coordination.
 
 ---
 
