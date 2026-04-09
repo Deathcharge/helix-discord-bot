@@ -24,7 +24,7 @@ toml==0.10.2
 pycryptodome==3.20.0
 
 # HTTP & API
-requests==2.32.3
+requests==2.32.4
 httpx==0.28.0
 
 # Logging
